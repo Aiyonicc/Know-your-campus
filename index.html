@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Campus - Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Header -->
+        <div class="quiz-header">
+            <button class="sound-toggle" id="soundToggle">🔊</button>
+            <h1 class="quiz-title">🎓 Know Your Campus</h1>
+            <p class="quiz-subtitle">Test your knowledge about campus life!</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+
+        <!-- Start Screen -->
+        <div class="screen active" id="startScreen">
+            <div class="campus-icon">🏫</div>
+            <h2>Welcome to Know Your Campus!</h2>
+            <p class="start-description">
+                Test your knowledge about campus history, events, and fun facts. 
+                You'll have 15 seconds per question. Good luck! 📚
+            </p>
+            <button class="start-btn" id="startBtn">Start Quiz 🚀</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div class="screen hidden" id="quizScreen">
+            <div class="quiz-info">
+                <div class="question-counter" id="questionCounter">Question 1 of 10</div>
+                <div class="timer" id="timer">15</div>
+            </div>
+            <div class="question-container">
+                <h3 class="question-text" id="questionText"></h3>
+                <div class="options-container" id="optionsContainer"></div>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div class="screen hidden" id="endScreen">
+            <div class="campus-icon">🎉</div>
+            <div class="score-display" id="scoreDisplay">0/10</div>
+            <div class="score-percentage" id="scorePercentage">0%</div>
+            <div class="score-message" id="scoreMessage"></div>
+            <button class="play-again-btn" id="playAgainBtn">Play Again 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
